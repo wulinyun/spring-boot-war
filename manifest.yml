@@ -1,0 +1,7 @@
+---
+applications:
+- name: pcf-demo
+  memory: 600M
+  host: pcf-demo
+  domain: local.pcfdev.io
+  stack: cflinuxfs2
