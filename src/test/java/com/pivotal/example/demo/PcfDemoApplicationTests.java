@@ -12,7 +12,7 @@ public class PcfDemoApplicationTests {
 	@Test
 	public void contextLoads() {
 		String pcf = null;
-		System.out.println(pcf.toString());
+		//System.out.println(pcf.toString());
 	}
 
 }
