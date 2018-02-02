@@ -4,5 +4,5 @@ applications:
   path: target/pcf-demo-0.0.1-SNAPSHOT.jar
   memory: 600M
   host: pcf-demo
-  domain: local.pcfdev.io
+  domain: pcf.com
   stack: cflinuxfs2
