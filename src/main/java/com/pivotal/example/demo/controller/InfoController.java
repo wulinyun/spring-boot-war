@@ -40,6 +40,13 @@ public class InfoController {
 	 public Map<String, String> showEnvironment() {
 	      return System.getenv();
 	 }
+	 @RequestMapping({"/spring_env"})
+	 @ResponseBody
+	 public Map<String, Object> showSpringEnvironment() {
+		 Map<String,Object> map = new HashMap<String,Object>();
+		 map.put("VCAP_SERVICES", this.springEnvironment.getProperty("VCAP_SERVICES"));
+		 return map;
+	 }
 	 @RequestMapping({"/service"})
 	 @ResponseBody
 	 public List<ServiceInfo> showServiceInfo() {
