@@ -11,6 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class RestBaseController {
 	@RequestMapping("/")
 	public String home(){
-		return "666666666";
+		return "77777";
 	}
 }
