@@ -1,6 +1,5 @@
-sudo docker build -t wulinyun/docker-war-demo .
 #构建镜像
-docker build -t="wulinyun/docker-jar-demo" .
+docker build -t="wulinyun/docker-war-demo" .
 #查看本地镜像
 docker images
 #标记为私有仓库镜像
