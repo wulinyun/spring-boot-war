@@ -1,0 +1,9 @@
+---
+applications:
+- name: spring-music-test
+  memory: 1024M
+  path: target/pcf-demo-0.0.1-SNAPSHOT.jar
+  host: spring-music-test
+  domain: landaudev.com
+  env:
+    TZ: Asia/Shanghai

@@ -1,0 +1,9 @@
+---
+applications:
+- name: spring-music-dev
+  memory: 1024M
+  path: target/spring-music.war
+  host: spring-music-dev
+  domain: landaudev.com
+  env:
+    TZ: Asia/Shanghai
