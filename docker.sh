@@ -6,6 +6,10 @@ docker images
 docker tag wulinyun/docker-war-demo harbor.landaudev.com/demo/docker-war-demo:latest
 #推送到私有镜像仓库当中
 docker push harbor.landaudev.com/demo/docker-war-demo:latest
+#登陆云
+cf login -a https://api.landaudev.com  -u demo -p demo --skip-ssl-validation
+#选择组织空间
+cf target -o demo -s deployment
 #push到PCF
 cf push docker-war-demo --docker-image harbor.landaudev.com/demo/docker-war-demo:latest
 #删除tag标记
