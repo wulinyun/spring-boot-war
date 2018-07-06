@@ -1,9 +1,9 @@
 ---
 applications:
-- name: spring-music-dev
+- name: spring-boot-demo2-dev
   memory: 1024M
-  path: target/spring-music.war
-  host: spring-music-dev
+  path: target/spring-boot-demo.war
+  host: spring-boot-demo2-dev
   domain: landaudev.com
   env:
     TZ: Asia/Shanghai
