@@ -2,28 +2,28 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    name: docker-war-demo
-  name: docker-war-demo
+    name: docker-war-demo-ingress
+  name: docker-war-demo-ingress
 spec:
   ports:
     - port: 8080
   selector:
-    app: docker-war-demo
+    app: docker-war-demo-ingress
 
 ---
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: docker-war-demo
+  name: docker-war-demo-ingress
 spec:
   replicas: 1
   template:
     metadata:
       labels:
-        app: docker-war-demo
+        app: docker-war-demo-ingress
     spec:
       containers:
-      - name: docker-war-demo
+      - name: docker-war-demo-ingress
         image: harbor.k8s.landaudev.com/demo/docker-war-demo
         ports:
         - containerPort: 8080
@@ -32,14 +32,14 @@ spec:
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: docker-war-demo
+  name: docker-war-demo-ingress
 spec:
   rules:
-  - host: docker-war-demo.k8s.landaudev.com
+  - host: docker-war-demo-ingress.k8s.landaudev.com
     http:
       paths:
       - path: /
         backend:
-          serviceName: docker-war-demo
+          serviceName: docker-war-demo-ingress
           servicePort: 8080
 
