@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
       - name: docker-war-demo
-        image: harbor.k8s.com/demo/docker-war-demo
+        image: harbor.k8s.landaudev.com/demo/docker-war-demo
         ports:
         - containerPort: 8080
 
@@ -35,7 +35,7 @@ metadata:
   name: docker-war-demo
 spec:
   rules:
-  - host: docker-war-demo.k8s.com
+  - host: docker-war-demo.k8s.landaudev.com
     http:
       paths:
       - path: /
