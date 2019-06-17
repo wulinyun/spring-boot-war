@@ -15,4 +15,9 @@ public class PcfDemoApplication extends SpringBootServletInitializer {
 	public static void main(String[] args) {
 		SpringApplication.run(PcfDemoApplication.class, args);
 	}
+
+	@Override
+	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+		return builder.sources(PcfDemoApplication.class);
+	}
 }
