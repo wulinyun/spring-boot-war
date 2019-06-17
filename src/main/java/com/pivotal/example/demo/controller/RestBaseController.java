@@ -11,6 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class RestBaseController {
 	@RequestMapping("/")
 	public String home(){
-		return "8888888";
+		return "8888888---->提交代码触发";
 	}
 }
