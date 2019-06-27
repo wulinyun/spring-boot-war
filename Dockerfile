@@ -1,4 +1,5 @@
 FROM tomcat:latest
+#FROM 10.128.1.201/system_containers/tomcat:latest
 MAINTAINER wulinyun "lin.wu@landasoft.com"
 WORKDIR /usr/local
 RUN rm -rf /usr/local/tomcat/webapps/*
