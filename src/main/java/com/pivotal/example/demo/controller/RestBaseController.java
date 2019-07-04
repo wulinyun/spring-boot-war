@@ -1,4 +1,4 @@
-package com.pivotal.example.demo.controller;
+﻿package com.pivotal.example.demo.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,6 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class RestBaseController {
 	@RequestMapping("/")
 	public String home(){
-		return "88888888";
+		return "Hello，World！";
 	}
 }
