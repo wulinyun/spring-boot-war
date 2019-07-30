@@ -1,4 +1,4 @@
-package com.pivotal.example.demo;
+package com.landasoft.demo.springboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -10,14 +10,14 @@ import org.springframework.context.annotation.ComponentScan;
 @EnableAutoConfiguration
 @SpringBootApplication
 @ComponentScan
-public class PcfDemoApplication extends SpringBootServletInitializer {
+public class DemoApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PcfDemoApplication.class, args);
+		SpringApplication.run(DemoApplication.class, args);
 	}
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-		return builder.sources(PcfDemoApplication.class);
+		return builder.sources(DemoApplication.class);
 	}
 }
