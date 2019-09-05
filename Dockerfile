@@ -1,5 +1,5 @@
 #FROM tomcat:latest
-FROM 10.128.1.201/system_containers/tomcat:8
+FROM 10.100.12.30/system_containers/tomcat:8
 MAINTAINER wulinyun "lin.wu@landasoft.com"
 WORKDIR /usr/local
 ENV TZ=Asia/Shanghai
